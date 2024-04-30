@@ -1,0 +1,25 @@
+.employee-list-main-container {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #fbeff5;
+}
+
+.employee-list-navbar {
+  margin-top: 85px;
+  border: 1px solid red;
+  height: 50px;
+}
+
+.employee-list-content-container {
+  /* height: 100%; */
+  display: flex;
+  background-color: #fbeff5;
+  margin-top: 105px;
+  align-items: center;
+  background-color: white;
+  flex-flow: column;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}

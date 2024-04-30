@@ -1,0 +1,27 @@
+.edit-icon, .delete-icon {
+    height: 30px;
+    width: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.delete-icon{
+    margin-left: 18px;
+}
+
+.uploaded-photo {
+    height: 75px;
+    margin-bottom: -4px;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+}
+th, td {
+    padding: 5px;
+}
+tr:hover {
+    background-color: aliceblue;
+}

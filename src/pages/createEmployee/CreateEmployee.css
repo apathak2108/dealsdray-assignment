@@ -1,0 +1,37 @@
+.create-employee-main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fbeff5;
+}
+
+.create-employee-content-container {
+  height: 72%;
+  display: flex;
+  margin-top: 105px;
+  align-items: center;
+  background-color: white;
+  flex-flow: column;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+.create-employee-form {
+  display: flex;
+  flex-flow: column;
+  padding-left: 10px;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.create-employee-submit-button {
+  width: 350px;
+  height: 40px;
+  border: none;
+  background-color: #d14f90;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
