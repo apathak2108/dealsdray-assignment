@@ -1,14 +1,14 @@
 .home-page-main-container {
-  height: 100vh;
+  height: 89vh;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
-  background-color: #fbeff5;
 }
 
 .home-page-content-container {
   display: flex;
+  margin-top: 70px;
   flex-flow: column;
-  margin-top: 105px;
   align-items: center;
 }
 

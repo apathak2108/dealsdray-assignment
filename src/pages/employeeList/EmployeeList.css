@@ -1,0 +1,13 @@
+.employee-list-main-container {
+  height: 89vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.employee-list-content-container {
+  display: flex;
+  background-color: white;
+  flex-flow: column;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}

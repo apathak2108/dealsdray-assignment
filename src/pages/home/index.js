@@ -18,7 +18,7 @@ const Home = () => {
             <Button
               name="Employee List"
               className="home-page-button"
-              onClick={() => navigate("/dashboard")}
+              onClick={() => navigate("/dashboard/employee-list")}
             />
             <Button
               name="Create Employee"

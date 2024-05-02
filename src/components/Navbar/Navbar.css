@@ -37,24 +37,24 @@
 }
 
 .navbar-right-potion {
-    display: flex;
-    gap: 135px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 135px;
+  justify-content: center;
+  align-items: center;
 }
 
 .create-employee-button {
-    height: 50px;
-    width: 180px;
-    background-color: #a6f1a6;
-    border: none;
-    border-radius: 6px;
-    color: #8d2559;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 600;
+  height: 50px;
+  width: 180px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d14f90;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .create-employee-button:hover {
-    background-color: #90ee90;
+  background-color: #c9357f;
 }

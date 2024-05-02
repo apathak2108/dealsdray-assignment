@@ -1,26 +1,24 @@
 .create-employee-main-container {
-  height: 100vh;
+  height: 89vh;
   display: flex;
   justify-content: center;
-  background-color: #fbeff5;
+  align-items: center;
 }
 
 .create-employee-content-container {
-  height: 72%;
   display: flex;
-  margin-top: 105px;
   align-items: center;
+  justify-content: center;
   background-color: white;
   flex-flow: column;
   border-radius: 6px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
-.create-employee-form {
+.left-and-right-portion-container {
   display: flex;
-  flex-flow: column;
-  padding-left: 10px;
-  align-items: flex-start;
-  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .create-employee-submit-button {
@@ -30,8 +28,24 @@
   background-color: #d14f90;
   font-size: 15px;
   font-weight: 700;
+  margin-bottom: 20px;
   color: white;
   letter-spacing: 2px;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.form-left-portion {
+  display: flex;
+  flex-flow: column;
+  gap: 27px;
+  margin-left: 25px;
+}
+
+.form-right-portion {
+  display: flex;
+  flex-flow: column;
+  margin-right: -45px;
+  gap: 26px;
 }
