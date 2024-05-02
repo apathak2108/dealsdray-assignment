@@ -18,7 +18,6 @@ export const login = (email, password, navigate) => {
       }
     } catch (error) {
       console.error("Error logging in:", error);
-      localStorage.setItem("loginStatus", false);
       alert("Invalid Login Details");
       dispatch({
         type: LOGIN_FAILURE,

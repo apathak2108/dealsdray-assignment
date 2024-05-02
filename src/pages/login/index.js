@@ -4,7 +4,6 @@ import Button from "../../components/Button";
 import {
   setLoginEmail,
   setLoginPassword,
-  setLoginStatus,
 } from "../../redux/action/loginAction";
 import { useNavigate } from "react-router-dom";
 import { login } from "../../redux/action/authAction";
@@ -16,20 +15,12 @@ const Login = () => {
   const dispatch = useDispatch();
   const email = useSelector((state) => state?.login?.email);
   const password = useSelector((state) => state?.login?.password);
-  const loggedUserDetails = useSelector((state) => state?.auth?.user);
-  console.log(loggedUserDetails, "loggedInStatus")
-  const loginStatus = useSelector((state) => state?.login?.status);
 
   const handleAuthentication = (e) => {
     e.preventDefault();
     dispatch(login(email, password, navigate));
-    // if (loggedUserDetails?.email === email && loggedUserDetails?.password === password) {
-    //   dispatch(setLoginStatus(true));
-    //   navigate('/dashboard');
-    // }
   };
 
-  console.log(loginStatus, "loginStatus")
   return (
     <div className="login-page-main-container">
       <div className="login-card">
