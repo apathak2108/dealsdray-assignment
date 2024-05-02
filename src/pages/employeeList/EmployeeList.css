@@ -3,6 +3,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  background-color: white;
 }
 
 .employee-list-content-container {
