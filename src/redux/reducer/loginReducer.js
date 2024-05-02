@@ -1,4 +1,7 @@
-import { SET_LOGIN_EMAIL, SET_LOGIN_PASSWORD } from "../actionTypes";
+import {
+  SET_LOGIN_EMAIL,
+  SET_LOGIN_PASSWORD,
+} from "../actionTypes";
 
 const initialState = {
   email: "",

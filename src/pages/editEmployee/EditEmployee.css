@@ -1,19 +1,20 @@
-.employee-list-main-container {
-  height: 100vh;
+.edit-employee-main-container {
+  height: 89vh;
   display: flex;
-  flex-flow: column;
   justify-content: center;
-  background-color: #fbeff5;
+  align-items: center;
 }
 
-.employee-list-navbar {
-  margin-top: 85px;
-  border: 1px solid red;
-  height: 50px;
+.edit-employee-content-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  flex-flow: column;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
 
 .employee-list-content-container {
-  /* height: 100%; */
   display: flex;
   background-color: #fbeff5;
   margin-top: 105px;
@@ -23,3 +24,41 @@
   border-radius: 6px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
+
+
+.left-and-right-portion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.create-employee-submit-button {
+  width: 350px;
+  height: 40px;
+  border: none;
+  background-color: #d14f90;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.form-left-portion {
+  display: flex;
+  flex-flow: column;
+  gap: 27px;
+  margin-left: 25px;
+}
+
+.form-right-portion {
+  display: flex;
+  flex-flow: column;
+  margin-right: -45px;
+  gap: 26px;
+}
+

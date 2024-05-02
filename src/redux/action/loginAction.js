@@ -1,4 +1,7 @@
-import { SET_LOGIN_EMAIL, SET_LOGIN_PASSWORD } from "../actionTypes";
+import {
+  SET_LOGIN_EMAIL,
+  SET_LOGIN_PASSWORD,
+} from "../actionTypes";
 
 export const setLoginEmail = (value) => {
   return {
@@ -13,3 +16,4 @@ export const setLoginPassword = (value) => {
     payload: value,
   };
 };
+

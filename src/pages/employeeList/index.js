@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/header";
 import GetEmployeeList from "../../components/getEmployeeListTable";
 import Navbar from "../../components/Navbar";
+import './EmployeeList.css';
 
 const EmployeeList = () => {
   return (
