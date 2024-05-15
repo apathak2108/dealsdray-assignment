@@ -21,7 +21,7 @@ const CreateEmployee = () => {
     mobile: "",
     designation: "",
     gender: "",
-    course: "",
+    course: [],
     image: `${CONSTANTS.EMPLOYEE_IMAGE_PATH}`,
   });
   console.log(formData);
@@ -33,10 +33,23 @@ const CreateEmployee = () => {
     });
   };
   const handleFormDataForCourse = (e) => {
+    const { name, checked } = e.target;
+    const updatedCourses = checked
+      ? [...formData.course, name]
+      : formData.course.filter((course) => course !== name);
+    const courseString = updatedCourses.reduce((acc, course, index) => {
+      acc += course;
+      if (index !== updatedCourses.length - 1 && (index + 1) % 3 === 0) {
+        acc += ",";
+      }
+      return acc;
+    }, "");
+
     setFormData({
       ...formData,
-      course: e.target.value,
+      course: courseString,
     });
+
     dispatch(setSelectedCourse(e.target.value));
   };
 
@@ -131,20 +144,21 @@ const CreateEmployee = () => {
                   />{" "}
                   Female
                 </span>
-                <span>
+                <span className="courses-input-field">
                   {courses?.map((course) => (
-                    <>
+                    <div key={course}>
                       <input
                         type="checkbox"
-                        checked={course === selectedCourse}
+                        checked={formData.course.includes(course)}
                         value={course}
                         name={course}
                         onChange={(e) => handleFormDataForCourse(e)}
                       />
                       <label>{course}</label>
-                    </>
+                    </div>
                   ))}
                 </span>
+
                 <span>
                   <input name="image" type="file" accept=".jpg,.png" />
                 </span>

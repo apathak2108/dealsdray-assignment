@@ -49,3 +49,7 @@
   margin-right: -45px;
   gap: 26px;
 }
+
+.courses-input-field {
+  display: flex;
+}
